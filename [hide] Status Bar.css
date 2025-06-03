@@ -1,0 +1,10 @@
+.status-bar-item{
+    display: none;
+}
+
+/* 指定のステータスバーのアイテムのみを表示 */
+.status-bar-item.plugin-word-count,
+.status-bar-item.plugin-obsidian-plugin-update-tracker,
+.status-bar-item.plugin-mysnippets-plugin{
+    display: flex !important;
+}

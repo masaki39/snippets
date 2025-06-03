@@ -1,0 +1,208 @@
+/* 使用が確定したもの */
+
+/* アクセントカラーを定義する(デフォルトテーマ、minimalテーマで確認) */
+body {
+    --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --accent-color-10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    --accent-color-20: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    --accent-color-30: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+    --accent-color-40: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+    --accent-color-50: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --accent-color-60: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.6);
+    --accent-color-70: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.7);
+    --accent-color-80: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+    --accent-color-90: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
+    --cards-background: var(--accent-color-10); /* card viewの背景色をアクセントカラーにする */
+}
+
+/* タブバーの背景色をアクセントカラーにする */
+.workspace-tab-header-container{
+    background: var(--accent-color-50);
+}
+/* サイドバーのボタンの背景色を透明にする */
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right{
+    background-color: transparent;
+}
+/* リボンの上の背景色をアクセントカラーにする */
+.workspace-ribbon{
+    --titlebar-background: var(--accent-color-50)!important;
+}
+
+/* インラインタイトルの色をアクセントカラーにして中央に配置 */
+.inline-title{
+    color: var(--ax1);
+    text-align: center;
+    font-size: 1.5em !important;
+}
+
+/* ヘッダーに下線を引いて色をアクセントカラーにする */
+.HyperMD-header-1,
+.markdown-preview-view h1 {
+  font-size: 1.2em;
+  color: var(--ax1);
+  border-bottom: solid 2px var(--ax1);
+}
+.HyperMD-header-2,
+.markdown-preview-view h2 {
+  font-size: 1.1em;
+  color: var(--ax1 );
+  border-bottom: dashed 2px var(--ax1);
+}
+.HyperMD-header-3,
+.markdown-preview-view h3 {
+  font-size: 1.1em;
+  color: var(--ax1 );
+  border-bottom: dotted 2px var(--ax1);
+}
+.HyperMD-header-4,
+.markdown-preview-view h4 {
+  font-size: 1em;
+  color: var(--ax1 );
+  border-bottom: solid 1px var(--ax1);
+}
+.HyperMD-header-5,
+.markdown-preview-view h5 {
+  font-size: 1em;
+  color: var(--ax1 );
+  border-bottom: dashed 1px var(--ax1);
+}
+.HyperMD-header-6,
+.markdown-preview-view h6 {
+  font-size: 1em;
+  color: var(--ax1 );
+  border-bottom: dotted 1px var(--ax1);
+}
+
+/* 線をアクセントカラーにする */
+hr,
+.markdown-rendered hr,
+.clickable-icon,
+.dropdown,
+button,
+input[type='text'],
+.nav-folder-title,
+a.tag,
+.bases-tr {
+    border-color: var(--accent-color-50);
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Basesのheaderの背景色をアクセントカラーにする */
+.bases-header{
+    background-color:var(--accent-color-50);
+}
+
+/* card viewのときhoverで背景色を戻す */
+.cards table.dataview>tbody>tr:hover,
+.list-cards.markdown-preview-view div>ul>li:hover { 
+    background-color: var(--background-primary);
+}
+
+/* アクティブカーソルの背景色をアクセントカラーにする */
+.cm-active{
+    background-color: var(--accent-color-20);
+}
+
+/* leafのpaddingとborder設定 */
+.workspace-leaf-content {
+    padding: 10px;
+}
+body.theme-light .workspace .mod-root .workspace-tab-header.is-active,
+body.theme-light .workspace-leaf-content {
+    background-color: white;
+}
+body.theme-dark .workspace .mod-root .workspace-tab-header.is-active,
+body.theme-dark .workspace-leaf-content {
+    background-color: black;
+}
+.view-content,
+.nav-files-container, 
+.search-result-container, 
+.tag-container {
+    border: 2px solid var(--accent-color-50);
+    background-color: var(--background-primary);
+}
+
+/* サイドバーのヘッダーを自動で折りたたむ */
+.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
+.mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container,
+.mod-left-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container {
+    background:
+        repeating-linear-gradient(
+            135deg, 
+            var(--background-modifier-border) 0px, 
+            transparent 1px,
+            transparent 10px,
+            var(--background-modifier-border) 11px, 
+            transparent 11px
+        ) !important;
+    height:8px;
+    transition:.2s all ease-in;
+    border-bottom-color:transparent;
+}
+.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container::before,
+.mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container::before,
+.mod-left-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container::before {
+    content:'';
+    background:linear-gradient(to top, var(--background-primary), transparent);
+    display:block;
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    top: 0;
+}
+.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container:hover,
+.mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container:focus-within,
+body.is-grabbing .mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
+.mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container:hover,
+.mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container:focus-within,
+body.is-grabbing .mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container,
+.mod-left-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container:hover,
+.mod-left-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container:focus-within,
+body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container {
+    /* is-grabbing visibility is to make dragging panels around usable */
+    height:var(--header-height);
+    background:var(--background-primary) !important;
+}
+
+/*プロパティを追加という文字を消す*/
+.metadata-container .metadata-add-button {
+    font-size: 0;
+}
+/* プロパティの文字を非表示 */
+.metadata-properties-title {
+  display: none;
+}
+/* プロパティの折りたたみボタンを非表示 */
+.metadata-properties-heading .collapse-indicator {
+  display: none;
+}
+/* プロパティを上に詰める */
+.metadata-container {
+  padding: 0px;
+}
+
+/* サイドバーの幅を固定 */
+.mod-left-split,
+.mod-right-split {
+  width: 300px !important;
+}
+
+  /* サイドバーの高さを固定 */
+.mod-left-split .workspace-tabs:not(.mod-top):last-of-type {
+    max-height: 310px;
+}
+.mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
+    max-height: 220px;
+}
+.mod-root .workspace-tabs:not(.mod-top):last-of-type{
+    max-height: 220px;
+}
+
+/* ターミナルプラグイン */
+.workspace-leaf-content[data-type="terminal:terminal"],
+.workspace-leaf-content[data-type="terminal:terminal"] .view-content {
+    padding: 0;
+}
