@@ -184,6 +184,11 @@ body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-ta
   padding: 0px;
 }
 
+/* プロパティの文字を折り返す */
+.metadata-input-longtext {
+    width: 100%;
+}
+
 /* サイドバーの幅を固定 */
 .mod-left-split,
 .mod-right-split {
