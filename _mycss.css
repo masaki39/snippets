@@ -202,7 +202,7 @@ body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-ta
 /* Basesプラグイン */
 /* Basesのheaderの背景色をアクセントカラーにする */
 .bases-header{
-    background-color:var(--accent-color-40);
+    background-color:var(--accent-color-30);
 }
 /* Basesのcard viewの背景色をアクセントカラーにする */
 .bases-cards-item:hover {
