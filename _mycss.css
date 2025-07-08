@@ -86,11 +86,6 @@ a.tag,
     border-width: 1px;
 }
 
-/* Basesのheaderの背景色をアクセントカラーにする */
-.bases-header{
-    background-color:var(--accent-color-50);
-}
-
 /* card viewのときhoverで背景色を戻す */
 .cards table.dataview>tbody>tr:hover,
 .list-cards.markdown-preview-view div>ul>li:hover { 
@@ -202,6 +197,16 @@ body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-ta
 }
 .mod-root .workspace-tabs:not(.mod-top):last-of-type{
     max-height: 220px;
+}
+
+/* Basesプラグイン */
+/* Basesのheaderの背景色をアクセントカラーにする */
+.bases-header{
+    background-color:var(--accent-color-40);
+}
+/* Basesのcard viewの背景色をアクセントカラーにする */
+.bases-cards-item:hover {
+    background-color: var(--accent-color-20);
 }
 
 /* ターミナルプラグイン */
