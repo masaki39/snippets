@@ -21,3 +21,7 @@
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon {
   display: none;
 }
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active {
+  background: color-mix(in srgb, var(--ax1) 30%, var(--background-primary) 70%);
+}
