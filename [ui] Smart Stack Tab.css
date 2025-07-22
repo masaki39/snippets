@@ -1,0 +1,23 @@
+/* タブをタブタイトルバーの裏に透明表示する */
+.mod-root .workspace-tabs .workspace-tab-header-container {
+  width: 100%;
+  height:var(--header-height)!important;
+  opacity: 0;
+  position: fixed;
+}
+/* 内部の要素を非表示 */
+.mod-root .workspace-tabs .workspace-tab-header-container * {
+  display: none;
+}
+/*タブタイトルバーに余白*/
+.is-focused .workspace-leaf.mod-active .view-header, .view-header{
+  padding-left: 75px;
+}
+/*スタックタブを下に移動*/
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner {
+  padding-top: 40px;
+}
+/*スタックタブのアイコンを非表示*/
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon {
+  display: none;
+}

@@ -96,26 +96,6 @@ a.tag,
     background-color: var(--accent-color-20);
 }
 
-/* leafのpaddingとborder設定 */
-.workspace-leaf-content {
-    padding: 10px;
-}
-body.theme-light .workspace .mod-root .workspace-tab-header.is-active,
-body.theme-light .workspace-leaf-content {
-    background-color: white;
-}
-body.theme-dark .workspace .mod-root .workspace-tab-header.is-active,
-body.theme-dark .workspace-leaf-content {
-    background-color: black;
-}
-.view-content,
-.nav-files-container, 
-.search-result-container, 
-.tag-container {
-    border: 2px solid var(--accent-color-50);
-    background-color: var(--background-primary);
-}
-
 /* サイドバーのヘッダーを自動で折りたたむ */
 .mod-root .workspace-tabs:not(.mod-top) .workspace-tab-header-container,
 .mod-right-split .workspace-tabs + .workspace-tabs .workspace-tab-header-container,
