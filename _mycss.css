@@ -174,9 +174,10 @@ body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-ta
 .mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
     max-height: 220px;
 }
-.mod-root .workspace-tabs:not(.mod-top):last-of-type{
+/* .mod-root .workspace-tabs:not(.mod-top):last-of-type{
     max-height: 220px;
 }
+*/
 
 /* タイトルの位置を調整 */
 .markdown-preview-section .title {
