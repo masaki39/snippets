@@ -167,14 +167,14 @@ body.is-grabbing .mod-left-split .workspace-tabs + .workspace-tabs .workspace-ta
   width: 300px !important;
 }
 
-  /* サイドバーの高さを固定 */
+  /* サイドバーの高さを固定 
 .mod-left-split .workspace-tabs:not(.mod-top):last-of-type {
     max-height: 310px;
 }
 .mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
     max-height: 220px;
 }
-/* .mod-root .workspace-tabs:not(.mod-top):last-of-type{
+.mod-root .workspace-tabs:not(.mod-top):last-of-type{
     max-height: 220px;
 }
 */
