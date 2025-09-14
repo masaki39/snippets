@@ -1,0 +1,17 @@
+/* サイドバーの幅を固定 */
+.mod-left-split,
+.mod-right-split {
+  width: 300px !important;
+}
+
+.mod-left-split .workspace-tabs:not(.mod-top):last-of-type {
+    max-height: 310px;
+}
+.mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
+    max-height: 220px;
+}
+/* 下に分割したときの高さ制限
+.mod-root .workspace-tabs:not(.mod-top):last-of-type{
+    max-height: 220px;
+}
+*/

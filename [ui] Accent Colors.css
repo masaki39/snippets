@@ -1,0 +1,44 @@
+/* アクセントカラーを定義する(デフォルトテーマ、minimalテーマで確認) */
+body {
+    --ax1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --accent-color-10: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    --accent-color-20: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+    --accent-color-30: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+    --accent-color-40: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+    --accent-color-50: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --accent-color-60: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.6);
+    --accent-color-70: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.7);
+    --accent-color-80: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+    --accent-color-90: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.9);
+    --cards-background: var(--accent-color-10); /* card viewの背景色をアクセントカラーにする */
+}
+
+/* インラインタイトルの色をアクセントカラーにして中央に配置 */
+.inline-title{
+    color: var(--ax1);
+    text-align: center;
+    font-size: 1.5em !important;
+}
+
+/* 線をアクセントカラーにする */
+.clickable-icon,
+.dropdown,
+button,
+.nav-folder-title,
+a.tag,
+.bases-tr {
+    border-color: var(--accent-color-50);
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* card viewのときhoverで背景色を戻す */
+.cards table.dataview>tbody>tr:hover,
+.list-cards.markdown-preview-view div>ul>li:hover {
+    background-color: var(--background-primary);
+}
+
+/* アクティブカーソルの背景色をアクセントカラーにする */
+.cm-active{
+    background-color: var(--accent-color-20);
+}

@@ -1,0 +1,21 @@
+/*プロパティを追加という文字を消す*/
+.metadata-container .metadata-add-button {
+    font-size: 0;
+}
+/* プロパティの文字を非表示 */
+.metadata-properties-title {
+  display: none;
+}
+/* プロパティの折りたたみボタンを非表示 */
+.metadata-properties-heading .collapse-indicator {
+  display: none;
+}
+/* プロパティを上に詰める */
+.metadata-container {
+  padding: 0px;
+}
+
+/* プロパティの文字を折り返す */
+.metadata-input-longtext {
+    width: 100%;
+}

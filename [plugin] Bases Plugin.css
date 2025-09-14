@@ -1,0 +1,9 @@
+/* Basesプラグイン */
+/* Basesのheaderの背景色をアクセントカラーにする */
+.bases-header{
+    background-color:var(--accent-color-30);
+}
+/* Basesのcard viewの背景色をアクセントカラーにする */
+.bases-cards-item:hover {
+    background-color: var(--accent-color-20);
+}

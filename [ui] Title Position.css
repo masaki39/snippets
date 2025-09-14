@@ -1,0 +1,9 @@
+/* タイトルの位置を調整 */
+.markdown-preview-section .title {
+    top: 60px;
+    position: absolute;
+    font-size: 36pt !important;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    color: var(--ax1);
+}
