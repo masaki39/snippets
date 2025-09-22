@@ -1,0 +1,7 @@
+.workspace-leaf-content{
+    box-sizing: border-box;
+    border: 4px solid transparent;
+}
+.workspace-leaf.mod-active .workspace-leaf-content {
+    border-color: var(--ax1);
+}
