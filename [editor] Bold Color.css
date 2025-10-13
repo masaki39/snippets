@@ -1,4 +1,4 @@
 strong,
 .cm-strong {
-    color: #dc3545;
+    color: var(--ax1)
 }
