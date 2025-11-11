@@ -10,7 +10,8 @@
 .mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
     max-height: 220px;
 }
-/* 下に分割したときの高さ制限 */
+/* 下に分割したときの高さ制限 (必要なら)
 .mod-root .workspace-tabs:not(.mod-top):last-of-type{
     max-height: 220px;
 }
+*/
