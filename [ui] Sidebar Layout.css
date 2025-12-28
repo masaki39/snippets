@@ -1,5 +1,8 @@
 /* サイドバーの幅を固定 */
-.mod-left-split,
+.mod-left-split {
+  width: 450px !important;
+}
+
 .mod-right-split {
   width: 300px !important;
 }
