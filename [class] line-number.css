@@ -1,4 +1,0 @@
-/* line-numberクラスが付いていない場合にガターを非表示 */
-.markdown-source-view.mod-cm6:not(.line-number) .cm-gutters-before {
-    display: none !important;
-}
