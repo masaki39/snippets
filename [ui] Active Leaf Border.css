@@ -3,8 +3,8 @@
     border: 4px solid transparent;
 }
 .workspace-leaf.mod-active .workspace-leaf-content {
-    border-color: red;
-}
-.workspace-leaf.mod-active .workspace-leaf-content:has(.cm-vimMode) {
     border-color: var(--ax1);
+}
+.workspace-leaf.mod-active .workspace-leaf-content:has(.markdown-source-view):not(:has(.cm-vimMode)) {
+    border-color: red;
 }
