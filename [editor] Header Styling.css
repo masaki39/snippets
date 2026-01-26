@@ -1,6 +1,7 @@
 /* ヘッダーに下線を引いて色をアクセントカラーにする */
 .HyperMD-header-1,
-.markdown-preview-view h1 {
+.markdown-preview-view h1,
+h1 {
   font-size: 1.2em;
   color: var(--ax1);
   border-bottom: solid 2px var(--ax1);
