@@ -8,6 +8,7 @@
   --theme-4: #7aa2f7; /*濃い青 link */
   --theme-5: #bb9af7; /*紫系、下でアクセントカラーに分解*/
   --theme-6: #76c4f1; /*水色 external link */
+  --theme-7: #a9b2d6; /* グレー */
   /* アクセントカラーをoverride */
   --accent-h: 261;
   --accent-s: 85%;
@@ -24,6 +25,7 @@
   --list-marker-color-collapsed: var(--theme-1);
   --checkbox-color: var(--theme-2);
   --text-accent: var(--theme-3);
+  --text-muted: var(--theme-7);
   --bold-color: var(--theme-3);
   --h1-color: var(--theme-5);
   --h2-color: var(--theme-5);
@@ -31,4 +33,7 @@
   --h4-color: var(--theme-5);
   --h5-color: var(--theme-5);
   --h6-color: var(--theme-5);
+  --tag-color: var(--theme-3) !important;
+  --tag-color-hover: var(--theme-1) !important;
+  --code-background: var(--theme-0);
 }
