@@ -4,8 +4,6 @@
 
 /* 指定のステータスバーのアイテムのみを表示 */
 .status-bar-item.plugin-word-count,
-.status-bar-item.plugin-better-word-count,
-.status-bar-item.plugin-obsidian-plugin-update-tracker,
-.status-bar-item.plugin-mysnippets-plugin{
+.status-bar-item.plugin-better-word-count{
     display: flex !important;
 }
