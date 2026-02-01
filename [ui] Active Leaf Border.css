@@ -1,3 +1,4 @@
+/* アクティブリーフに枠線を表示して、insert modeのときは赤にする */
 .workspace-leaf.mod-active .workspace-leaf-content {
     position: relative;
 }

@@ -13,18 +13,10 @@ body {
     --cards-background: var(--accent-color-10); /* card viewの背景色をアクセントカラーにする */
 }
 
-/* インラインタイトルの色をアクセントカラーにして中央に配置 */
-.inline-title{
-    color: var(--ax1);
-    text-align: center;
-    font-size: 1.5em !important;
-}
-
 /* 線をアクセントカラーにする */
 .clickable-icon,
 .dropdown,
 button,
-.nav-folder-title,
 a.tag,
 .bases-tr {
     border-color: var(--accent-color-50);
@@ -32,13 +24,23 @@ a.tag,
     border-width: 1px;
 }
 
-/* card viewのときhoverで背景色を戻す */
-.cards table.dataview>tbody>tr:hover,
-.list-cards.markdown-preview-view div>ul>li:hover {
-    background-color: var(--background-primary);
+/* タブバーの背景色をアクセントカラーにする */
+.workspace-tab-header-container{
+    background: var(--accent-color-50);
 }
 
 /* アクティブカーソルの背景色をアクセントカラーにする */
 .cm-active{
     background-color: var(--accent-color-20);
 }
+
+/* Basesプラグイン */
+/* Basesのheaderの背景色をアクセントカラーにする */
+.bases-header{
+    background-color:var(--accent-color-30);
+}
+/* Basesのcard viewの背景色をアクセントカラーにする */
+.bases-cards-item:hover {
+    background-color: var(--accent-color-20);
+}
+
