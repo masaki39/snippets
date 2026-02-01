@@ -1,5 +1,0 @@
-/* ターミナルプラグイン */
-.workspace-leaf-content[data-type="terminal:terminal"],
-.workspace-leaf-content[data-type="terminal:terminal"] .view-content {
-    padding: 0;
-}
