@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 3px solid hsl( var(--accent-h), var(--accent-s), var(--accent-l) ); /* アクセントカラーを使用 */
+    border: 2px solid hsl( var(--accent-h), var(--accent-s), var(--accent-l) ); /* アクセントカラーを使用 */
     pointer-events: none;
     z-index: 9999;
 }
