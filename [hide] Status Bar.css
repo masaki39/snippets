@@ -3,6 +3,7 @@
 }
 
 /* 指定のステータスバーのアイテムのみを表示 */
+/* とりあえず文字カウントのみ許可 */
 .status-bar-item.plugin-word-count,
 .status-bar-item.plugin-better-word-count{
     display: flex !important;
