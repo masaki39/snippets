@@ -24,5 +24,9 @@
   --list-bullet-size: 0.5em;
   --checkbox-color: var(--theme-2);
   --text-accent: var(--theme-3);
+  --metadata-background: var(--theme-0);
+  --metadata-border-color: var(--theme-7);
+  --metadata-border-radius: 10px;
+  --metadata-border-width: 2px;
 }
 
