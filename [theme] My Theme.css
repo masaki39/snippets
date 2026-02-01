@@ -20,10 +20,12 @@
   --link-external-color: var(--theme-6);
   --link-external-color-hover: var(--theme-1);
   --list-marker-color: var(--theme-3);
+  --text-formatting: var(--theme-3); /*minimalの数字リスト用*/
   --list-marker-color-collapsed: var(--theme-1);
   --list-bullet-size: 0.5em;
   --checkbox-color: var(--theme-2);
   --text-accent: var(--theme-3);
+  --bold-color: var(--theme-1);
   --metadata-background: var(--theme-0);
   --metadata-border-color: var(--theme-7);
   --metadata-border-radius: 10px;
