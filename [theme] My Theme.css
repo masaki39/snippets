@@ -1,0 +1,27 @@
+.theme-dark {
+  /* ===== カラーパレット ===== */
+  --theme-color: #1a1b26;
+  --theme-0: #15161e; /*黒*/
+  --theme-1: #f7768e; /*赤系*/
+  --theme-2: #9ece6a; /*緑系*/
+  --theme-3: #e0af69; /*黄色系*/
+  --theme-4: #7aa2f7; /*濃い青*/
+  --theme-5: #bb9af7; /*紫系、アクセントカラーに分解*/
+  --theme-6: #76c4f1; /*水色*/
+  --theme-7: #a8b1d6; /*グレー*/
+  --accent-h: 261;
+  --accent-s: 85%;
+  --accent-l: 79%;
+
+  --background-primary: var(--theme-color);
+  --background-secondary: var(--theme-0);
+  --link-color: var(--theme-4);
+  --link-color-hover: var(--theme-1);
+  --link-external-color: var(--theme-6);
+  --link-external-color-hover: var(--theme-1);
+  --list-marker-color: var(--theme-3);
+  --list-marker-color-collapsed: var(--theme-1);
+  --checkbox-color: var(--theme-2);
+  --text-accent: var(--theme-3);
+}
+

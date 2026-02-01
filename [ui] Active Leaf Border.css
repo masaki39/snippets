@@ -1,10 +1,17 @@
-.workspace-leaf-content{
-    box-sizing: border-box;
-    border: 4px solid transparent;
-}
 .workspace-leaf.mod-active .workspace-leaf-content {
-    border-color: var(--ax1);
+    position: relative;
 }
-.workspace-leaf.mod-active .workspace-leaf-content:has(.markdown-source-view):not(:has(.cm-vimMode)) {
-    border-color: red;
+.workspace-leaf.mod-active .workspace-leaf-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid var(--ax1);
+    pointer-events: none;
+    z-index: 9999;
+}
+.workspace-leaf.mod-active .workspace-leaf-content:has(.markdown-source-view):not(:has(.cm-vimMode))::before {
+    border-color: #f7768e;
 }
