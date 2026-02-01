@@ -9,8 +9,8 @@
 
 /* サイドバーの一番下のタブの高さを制限する */
 .mod-left-split .workspace-tabs:not(.mod-top):last-of-type {
-    max-height: 310px;
+  max-height: 310px;
 }
 .mod-right-split .workspace-tabs:not(.mod-top):last-of-type {
-    max-height: 220px;
+  max-height: 220px;
 }

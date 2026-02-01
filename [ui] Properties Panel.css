@@ -1,6 +1,6 @@
 /*プロパティを追加という文字を消す*/
 .metadata-container .metadata-add-button {
-    font-size: 0;
+  font-size: 0;
 }
 /* プロパティの文字を非表示 */
 .metadata-properties-title {
@@ -17,5 +17,5 @@
 
 /* プロパティの文字を折り返す */
 .metadata-input-longtext {
-    width: 100%;
+  width: 100%;
 }
