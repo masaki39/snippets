@@ -36,3 +36,88 @@ h1 {
   color: var(--ax1 );
   border-bottom: dotted 1px var(--ax1);
 }
+
+/* ヘッダーの前にレベル表示を追加 */
+.HyperMD-header-1,
+.markdown-preview-view h1 {
+  position: relative;
+}
+.HyperMD-header-1::before,
+.markdown-preview-view h1::before {
+  content: "h1";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.HyperMD-header-2,
+.markdown-preview-view h2 {
+  position: relative;
+}
+.HyperMD-header-2::before,
+.markdown-preview-view h2::before {
+  content: "h2";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.HyperMD-header-3,
+.markdown-preview-view h3 {
+  position: relative;
+}
+.HyperMD-header-3::before,
+.markdown-preview-view h3::before {
+  content: "h3";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.HyperMD-header-4,
+.markdown-preview-view h4 {
+  position: relative;
+}
+.HyperMD-header-4::before,
+.markdown-preview-view h4::before {
+  content: "h4";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.HyperMD-header-5,
+.markdown-preview-view h5 {
+  position: relative;
+}
+.HyperMD-header-5::before,
+.markdown-preview-view h5::before {
+  content: "h5";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.HyperMD-header-6,
+.markdown-preview-view h6 {
+  position: relative;
+}
+.HyperMD-header-6::before,
+.markdown-preview-view h6::before {
+  content: "h6";
+  position: absolute;
+  left: -1.5em;
+  bottom: 0;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
