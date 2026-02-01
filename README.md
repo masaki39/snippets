@@ -13,3 +13,7 @@ Backup of my CSS snippets for Obsidian.
 - Maximize workspace.
 - Focus on work.
 - Minimize unnecessary UI.
+
+## Maintenance
+
+- Inactive snippets are removed to keep the repository clean.
