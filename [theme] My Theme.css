@@ -40,4 +40,5 @@
   --code-background: var(--theme-0);
   --code-comment: var(--theme-7);
   --blockquote-border-color: var(--theme-2);
+  --line-number-color-active: var(--theme-1); /* minimalでのみ適応 */
 }
