@@ -23,6 +23,8 @@
   --list-marker-color: var(--theme-3);
   --text-formatting: var(--theme-3); /*minimalでのみ適応*/
   --list-marker-color-collapsed: var(--theme-1);
+  --indentation-guide-color: var(--theme-2);
+  --indentation-guide-color-active: var(--theme-1);
   --checkbox-color: var(--theme-2);
   --text-accent: var(--theme-3);
   --text-muted: var(--theme-7);
@@ -37,4 +39,5 @@
   --tag-color-hover: var(--theme-1) !important;
   --code-background: var(--theme-0);
   --code-comment: var(--theme-7);
+  --blockquote-border-color: var(--theme-2);
 }
