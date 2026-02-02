@@ -28,6 +28,7 @@
   --checkbox-color: var(--theme-2);
   --text-accent: var(--theme-3);
   --text-muted: var(--theme-7);
+  --text-faint: var(--theme-7);
   --bold-color: var(--theme-3);
   --h1-color: var(--theme-5);
   --h2-color: var(--theme-5);
