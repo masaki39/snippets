@@ -36,4 +36,5 @@
   --tag-color: var(--theme-3) !important;
   --tag-color-hover: var(--theme-1) !important;
   --code-background: var(--theme-0);
+  --code-comment: var(--theme-7);
 }
