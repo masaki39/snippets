@@ -1,48 +1,50 @@
 .theme-dark {
   /* ===== カラーパレット ===== */
-  --theme-color: #1a1b26; /* bg (背景色) */
-  --theme-0: #16161e; /* bg_float (背景色2) */
-  --theme-1: #f7768e; /* red (赤系) */
-  --theme-2: #9ece6a; /* green (緑系) */
-  --theme-3: #e0af68; /* yellow (黄色系・強調) */
-  --theme-4: #7aa2f7; /* blue (リンク) */
-  --theme-5: #bb9af7; /* magenta (紫系) */
-  --theme-6: #7dcfff; /* cyan (水色・外部リンク) */
-  --theme-7: #a9b1d6; /* fg_dark (グレー) */
-  /* アクセントカラーをoverride */
+  --palette-bg: #1a1b26;
+  --palette-bg-alt: #16161e;
+  --palette-red: #f7768e; /* active status */
+  --palette-green: #9ece6a; /* structure */
+  --palette-yellow: #e0af68; /* strong */
+  --palette-blue: #7aa2f7; /* link */
+  --palette-magenta: #bb9af7; /* accent color */
+  --palette-cyan: #7dcfff; /* external link */
+  --palette-gray: #a9b1d6; /* text color */
+
+  /* magentaをhslに分解しアクセントカラーをoverride */
   --accent-h: 261;
   --accent-s: 85%;
   --accent-l: 79%;
 
-  --background-primary: var(--theme-color);
-  --background-secondary: var(--theme-0);
-  --link-color: var(--theme-4);
-  --link-color-hover: var(--theme-1);
-  --link-external-color: var(--theme-6);
-  --link-external-color-hover: var(--theme-1);
-  --list-marker-color: var(--theme-3);
-  --list-marker-color-collapsed: var(--theme-1);
-  --indentation-guide-color: var(--theme-2);
-  --indentation-guide-color-active: var(--theme-1);
-  --checkbox-color: var(--theme-2);
-  --text-accent: var(--theme-3);
-  --text-muted: var(--theme-7);
-  --text-faint: var(--theme-7);
-  --bold-color: var(--theme-3);
-  --h1-color: var(--theme-5);
-  --h2-color: var(--theme-5);
-  --h3-color: var(--theme-5);
-  --h4-color: var(--theme-5);
-  --h5-color: var(--theme-5);
-  --h6-color: var(--theme-5);
-  --tag-color: var(--theme-3) !important;
-  --tag-color-hover: var(--theme-1) !important;
-  --code-background: var(--theme-0);
-  --code-comment: var(--theme-7);
-  --blockquote-border-color: var(--theme-2);
+  /* ===== 用途 ===== */
+  --background-primary: var(--palette-bg);
+  --background-secondary: var(--palette-bg-alt);
+  --link-color: var(--palette-blue);
+  --link-color-hover: var(--palette-red);
+  --link-external-color: var(--palette-cyan);
+  --link-external-color-hover: var(--palette-red);
+  --list-marker-color: var(--palette-yellow);
+  --list-marker-color-collapsed: var(--palette-red);
+  --indentation-guide-color: var(--palette-green);
+  --indentation-guide-color-active: var(--palette-red);
+  --checkbox-color: var(--palette-green);
+  --text-accent: var(--palette-yellow);
+  --text-muted: var(--palette-gray);
+  --text-faint: var(--palette-gray);
+  --bold-color: var(--palette-yellow);
+  --h1-color: var(--palette-magenta);
+  --h2-color: var(--palette-magenta);
+  --h3-color: var(--palette-magenta);
+  --h4-color: var(--palette-magenta);
+  --h5-color: var(--palette-magenta);
+  --h6-color: var(--palette-magenta);
+  --tag-color: var(--palette-yellow) !important;
+  --tag-color-hover: var(--palette-red) !important;
+  --code-background: var(--palette-bg-alt);
+  --code-comment: var(--palette-gray);
+  --blockquote-border-color: var(--palette-green);
 
   /* minimalでのみ適応 */
-  --text-formatting: var(--theme-3);
-  --line-number-color-active: var(--theme-1);
-  --minimal-tab-text-color-active: var(--theme-1); 
+  --text-formatting: var(--palette-yellow);
+  --line-number-color-active: var(--palette-red);
+  --minimal-tab-text-color-active: var(--palette-red); 
 }

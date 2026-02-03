@@ -4,7 +4,7 @@ Backup of my CSS snippets for Obsidian.
 
 ## ✨️Features
 
-- Made for Default / Minimal Theme.
+- Made for Minimal Theme.
 - All snippets work independently.
 - Use [Official CSS variables](https://docs.obsidian.md/Reference/CSS+variables/CSS+variables) as much as possible.
 
