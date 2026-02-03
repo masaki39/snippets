@@ -1,14 +1,14 @@
 .theme-dark {
   /* ===== カラーパレット ===== */
   --theme-color: #1a1b26; /*背景色*/
-  --theme-0: #15161e; /*黒 背景色2*/
+  --theme-0: #16161e; /*黒 背景色2*/
   --theme-1: #f7768e; /*赤系 status*/
   --theme-2: #9ece6a; /*緑系 checkbox */
-  --theme-3: #e0af69; /*黄色系 強調 */
+  --theme-3: #e0af68; /*黄色系 強調 */
   --theme-4: #7aa2f7; /*濃い青 link */
   --theme-5: #bb9af7; /*紫系、下でアクセントカラーに分解*/
-  --theme-6: #76c4f1; /*水色 external link */
-  --theme-7: #a9b2d6; /* グレー */
+  --theme-6: #7dcfff; /*水色 external link */
+  --theme-7: #a9b1d6; /* グレー */
   /* アクセントカラーをoverride */
   --accent-h: 261;
   --accent-s: 85%;
