@@ -21,7 +21,6 @@
   --link-external-color: var(--theme-6);
   --link-external-color-hover: var(--theme-1);
   --list-marker-color: var(--theme-3);
-  --text-formatting: var(--theme-3); /*minimalでのみ適応*/
   --list-marker-color-collapsed: var(--theme-1);
   --indentation-guide-color: var(--theme-2);
   --indentation-guide-color-active: var(--theme-1);
@@ -41,5 +40,9 @@
   --code-background: var(--theme-0);
   --code-comment: var(--theme-7);
   --blockquote-border-color: var(--theme-2);
-  --line-number-color-active: var(--theme-1); /* minimalでのみ適応 */
+
+  /* minimalでのみ適応 */
+  --text-formatting: var(--theme-3);
+  --line-number-color-active: var(--theme-1);
+  --minimal-tab-text-color-active: var(--theme-1); 
 }
