@@ -16,3 +16,44 @@
 .workspace-leaf.mod-active .workspace-leaf-content:has(.markdown-source-view):not(:has(.cm-vimMode))::before {
   border-color: #f7768e;
 }
+
+/* Vimモード表示バナー */
+/* NORMAL mode */
+.workspace-leaf.mod-active .workspace-leaf-content:has(.cm-vimMode)::after {
+  content: "NORMAL";
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  padding: 2px 8px;
+  width: 60px;
+  text-align: center;
+  background-color: hsl( var(--accent-h), var(--accent-s), var(--accent-l) );
+  color: var(--text-on-accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 2px 0 0 2px;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* INSERT mode */
+.workspace-leaf.mod-active .workspace-leaf-content:has(.markdown-source-view):not(:has(.cm-vimMode))::after {
+  content: "INSERT";
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  padding: 2px 8px;
+  width: 60px;
+  text-align: center;
+  background-color: #f7768e;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 2px 0 0 2px;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%);
+  pointer-events: none;
+  z-index: 10000;
+}
