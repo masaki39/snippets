@@ -57,3 +57,8 @@
   pointer-events: none;
   z-index: 10000;
 }
+
+/* コマンド入力欄がフォーカスされているときはバナーを非表示 */
+.workspace-leaf.mod-active .workspace-leaf-content:has(.cm-panels.cm-panels-bottom input[type="text"]:focus)::after {
+  display: none;
+}
