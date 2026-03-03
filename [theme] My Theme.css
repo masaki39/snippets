@@ -46,5 +46,5 @@
   /* minimalでのみ適応 */
   --text-formatting: var(--palette-yellow);
   --line-number-color-active: var(--palette-red);
-  --minimal-tab-text-color-active: var(--palette-red); 
+  --minimal-tab-text-color-active: var(--palette-magenta); 
 }
