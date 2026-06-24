@@ -1,0 +1,50 @@
+/* ================================================================
+   [callout] timeline / timeline|blue  — SNS投稿風
+   使い方:
+     > [!timeline] 23:23          ← ローカルつぶやき
+     > [!timeline|blue] 23:23     ← Bluesky投稿
+   ================================================================*/
+
+/* ── Color tokens ───────────────────────────────────────── */
+.theme-dark {
+  --sns-bg:     #15202b;
+  --sns-border: #38444d;
+  --sns-text:   #f7f9f9;
+  --sns-sub:    #8b98a5;
+}
+
+.theme-light {
+  --sns-bg:     #ffffff;
+  --sns-border: #cfd9de;
+  --sns-text:   #0f1419;
+  --sns-sub:    #536471;
+}
+
+/* ── Container ──────────────────────────────────────────── */
+.callout[data-callout="timeline"] {
+  position: relative;
+  background: var(--sns-bg) !important;
+  border: 1px solid var(--sns-border) !important;
+  border-radius: 16px;
+}
+
+/* Bluesky のみ左ボーダーを青く */
+.callout[data-callout="timeline"][data-callout-metadata="blue"] {
+  border-left: 3px solid #0085ff !important;
+}
+
+/* タイムスタンプ（title text）はミュートカラー */
+.callout[data-callout="timeline"] .callout-title-inner {
+  color: var(--sns-sub);
+  font-weight: 400;
+}
+
+/* ── Content（投稿本文）─────────────────────────────────── */
+.callout[data-callout="timeline"] .callout-content p {
+  margin: 0;
+}
+
+/* ── 折りたたみボタン非表示 ─────────────────────────────── */
+.callout[data-callout="timeline"] .callout-fold {
+  display: none;
+}
