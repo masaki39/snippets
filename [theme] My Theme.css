@@ -42,6 +42,51 @@
   --code-background: var(--palette-bg-alt);
   --code-comment: var(--palette-gray);
   --blockquote-border-color: var(--palette-green);
+  /* Properties container */
+  --metadata-background: var(--palette-bg-alt);
+  --metadata-border-color: var(--palette-green); /* structure */
+  --metadata-border-width: 1px;
+  --metadata-border-radius: 3px;
+  --metadata-padding: 12px;
+  --metadata-gap: 4px;
+  --metadata-max-width: var(--file-line-width);
+
+  /* Individual properties: bgをpalette-bgにしてcontainer(bg-alt)から浮かせ、区画を明確化 */
+  --metadata-divider-color: color-mix(in srgb, var(--palette-green) 35%, transparent);
+  --metadata-divider-color-hover: var(--palette-blue);
+  --metadata-divider-color-focus: var(--palette-red); /* active status */
+  --metadata-divider-width: 1px;
+  --metadata-property-padding: 2px 8px;
+  --metadata-property-radius: 2px;
+  --metadata-property-radius-hover: 2px;
+  --metadata-property-radius-focus: 2px;
+  --metadata-property-background: var(--palette-bg);
+  --metadata-property-background-hover: color-mix(in srgb, var(--palette-blue) 14%, var(--palette-bg));
+  --metadata-property-background-active: color-mix(in srgb, var(--palette-red) 18%, var(--palette-bg)); /* active status */
+  --metadata-label-background-hover: color-mix(in srgb, var(--palette-blue) 20%, var(--palette-bg));
+  --metadata-label-background-active: color-mix(in srgb, var(--palette-red) 24%, var(--palette-bg));
+  --metadata-label-font-size: var(--font-smaller);
+  --metadata-label-font-weight: 700;
+  --metadata-sidebar-label-font-size: var(--font-smaller);
+  --metadata-label-text-color: var(--palette-green); /* structure */
+  --metadata-label-text-color-hover: var(--palette-red); /* active status */
+  --metadata-label-width: 8em;
+  --metadata-input-height: 24px;
+  --metadata-input-text-color: var(--palette-gray);
+  --metadata-input-font-size: var(--font-smaller);
+  --metadata-sidebar-input-font-size: var(--font-smaller);
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: color-mix(in srgb, var(--palette-blue) 12%, transparent);
+  --metadata-input-background-active: color-mix(in srgb, var(--palette-red) 16%, transparent);
+
+  /* Inline title: 銘板(nameplate)風。small-capsは日本語に効かないため、太さ・サイズ・色(LED発光風)で強調 */
+  --inline-title-color: color-mix(in srgb, var(--palette-green) 80%, white 20%);
+  --inline-title-font: var(--font-monospace);
+  --inline-title-line-height: 1.1;
+  --inline-title-size: 1.5em;
+  --inline-title-style: normal;
+  --inline-title-variant: small-caps;
+  --inline-title-weight: 900;
 
   /* minimalでのみ適応 */
   --text-formatting: var(--palette-yellow);
