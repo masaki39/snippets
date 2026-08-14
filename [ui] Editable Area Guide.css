@@ -1,0 +1,27 @@
+/* ================================================================
+   [ui] Editable Area Guide
+   インラインタイトル/プロパティ領域と、本文の編集可能領域を
+   区切り線で分離する。
+   ================================================================*/
+
+.theme-dark {
+  --header-area-line: rgba(158, 206, 106, 0.35);
+}
+
+.theme-light {
+  --header-area-line: rgba(63, 143, 63, 0.3);
+}
+
+/* 本文編集エリアの少し上に区切り線 */
+.markdown-source-view.mod-cm6 .cm-content {
+  position: relative;
+}
+.markdown-source-view.mod-cm6 .cm-content::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed var(--header-area-line);
+  pointer-events: none;
+}
