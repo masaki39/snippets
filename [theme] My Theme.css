@@ -88,6 +88,11 @@
   --inline-title-variant: small-caps;
   --inline-title-weight: 900;
 
+  /* Bases系 */
+  --bases-table-header-color: var(--palette-magenta);
+  --bases-table-border-color: var(--palette-magenta);
+  
+
   /* minimalでのみ適応 */
   --text-formatting: var(--palette-yellow);
   --line-number-color-active: var(--palette-red);

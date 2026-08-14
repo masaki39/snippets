@@ -1,45 +1,127 @@
 /* ================================================================
-   [callout] timeline / timeline|blue  — SNS投稿風
+   [callout] timeline / timeline|blue  — ログ端末/HUD風
    使い方:
-     > [!timeline] 23:23          ← ローカルつぶやき
-     > [!timeline|blue] 23:23     ← Bluesky投稿
+     > [!timeline] 23:23          ← ローカルログ
+     > [!timeline|blue] 23:23     ← 外部ネットワーク投稿 (Bluesky等)
    ================================================================*/
 
 /* ── Color tokens ───────────────────────────────────────── */
 .theme-dark {
-  --sns-bg:     #15202b;
-  --sns-border: #38444d;
-  --sns-text:   #f7f9f9;
-  --sns-sub:    #8b98a5;
+  --tl-bg: #12151c;
+  --tl-bg-strip: #0c0e13;
+  --tl-border: #2b3040;
+  --tl-sub: #7a8291;
+  --tl-accent: #9ece6a; /* ローカル: structure green */
+  --tl-accent-net: #7dcfff; /* ネットワーク: external cyan */
+  --tl-grid: rgba(192, 202, 245, 0.035);
 }
 
 .theme-light {
-  --sns-bg:     #ffffff;
-  --sns-border: #cfd9de;
-  --sns-text:   #0f1419;
-  --sns-sub:    #536471;
+  --tl-bg: #f3f5f7;
+  --tl-bg-strip: #e6e9ec;
+  --tl-border: #c4cbd3;
+  --tl-sub: #5b6570;
+  --tl-accent: #3f8f3f;
+  --tl-accent-net: #0969da;
+  --tl-grid: rgba(27, 31, 36, 0.04);
 }
 
-/* ── Container ──────────────────────────────────────────── */
+/* ── Container: パネル筐体 ──────────────────────────────── */
 .callout[data-callout="timeline"] {
   position: relative;
-  background: var(--sns-bg) !important;
-  border: 1px solid var(--sns-border) !important;
-  border-radius: 16px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      var(--tl-grid) 0px,
+      var(--tl-grid) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    var(--tl-bg) !important;
+  border: 1px solid var(--tl-border) !important;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-/* Bluesky のみ左ボーダーを青く */
+/* コーナーブラケット（照準/HUD風の切り欠き） */
+.callout[data-callout="timeline"]::before,
+.callout[data-callout="timeline"]::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: var(--tl-accent) solid;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.callout[data-callout="timeline"]::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+.callout[data-callout="timeline"]::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+/* ネットワーク変種はアクセントを cyan に */
 .callout[data-callout="timeline"][data-callout-metadata="blue"] {
-  border-left: 3px solid #0085ff !important;
+  border-left: 3px solid var(--tl-accent-net) !important;
+}
+.callout[data-callout="timeline"][data-callout-metadata="blue"]::before,
+.callout[data-callout="timeline"][data-callout-metadata="blue"]::after {
+  border-color: var(--tl-accent-net);
 }
 
-/* タイムスタンプ（title text）はミュートカラー */
+/* ── Title: ログのタイムスタンプ行 ──────────────────────── */
+.callout[data-callout="timeline"] .callout-title {
+  background: var(--tl-bg-strip);
+  border-bottom: 1px dashed var(--tl-border);
+  padding: 2px 10px;
+}
+
+.callout[data-callout="timeline"] .callout-icon {
+  display: none;
+}
+
 .callout[data-callout="timeline"] .callout-title-inner {
-  color: var(--sns-sub);
-  font-weight: 400;
+  color: var(--tl-sub);
+  font-family: var(--font-monospace);
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* タイムスタンプ前の LED インジケータ */
+.callout[data-callout="timeline"] .callout-title-inner::before {
+  content: "●";
+  display: inline-block;
+  margin-right: 6px;
+  color: var(--tl-accent);
+  text-shadow: 0 0 4px var(--tl-accent);
+  animation: tl-blink 2.4s ease-in-out infinite;
+}
+.callout[data-callout="timeline"][data-callout-metadata="blue"] .callout-title-inner::before {
+  color: var(--tl-accent-net);
+  text-shadow: 0 0 4px var(--tl-accent-net);
+}
+
+@keyframes tl-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
 
 /* ── Content（投稿本文）─────────────────────────────────── */
+.callout[data-callout="timeline"] .callout-content {
+  padding: 8px 10px 10px;
+}
 .callout[data-callout="timeline"] .callout-content p {
   margin: 0;
 }
