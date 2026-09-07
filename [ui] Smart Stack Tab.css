@@ -1,0 +1,10 @@
+/* アクティブなスタックタブのタイトル文字列をredにする */
+.workspace-tabs.mod-stacked .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--palette-red);
+}
+
+/* スタックタブがあるグループだけ上部タブバーを非表示にする
+   （コンテナ自体は上に詰めてOK） */
+.workspace-tabs.mod-stacked > .workspace-tab-header-container {
+  display: none;
+}
