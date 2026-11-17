@@ -42,6 +42,9 @@
   --code-background: var(--palette-bg-alt);
   --code-comment: var(--palette-gray);
   --blockquote-border-color: var(--palette-green);
+  /* 水平線(hr)をプロパティ枠線と揃える */
+  --hr-color: var(--metadata-border-color);
+  --hr-thickness: var(--metadata-border-width);
   /* Properties container */
   --metadata-background: var(--palette-bg-alt);
   --metadata-border-color: var(--palette-green); /* structure */
